@@ -7,6 +7,8 @@ const ContaAguaController = require('./controllers/ContaAguaController');
 const ProfileController = require('./controllers/ProfileController');
 const SessaoController = require('./controllers/SessaoController');
 
+const ContaLuzService = require('./services/ContaLuzService')
+
 const routes = express.Router();
 
 routes.get('/profile', ProfileController.index);
@@ -25,7 +27,7 @@ routes.get('/contas/agua', ContaAguaController.index);
 routes.delete('/contas/agua/:id', ContaAguaController.delete);
    
 
-
+routes.get('/contas/luz/service', ContaLuzService.soma);
 
 
 module.exports = routes;
