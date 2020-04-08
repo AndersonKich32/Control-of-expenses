@@ -9,14 +9,106 @@
 
 body{
     font: 400 14px Roboto, sans-serif ;
-    background: #f6f7f8;
     -webkit-font-smoothing: antialiased;
+    background: #0095d7;
 }
 
 input, button, textarea{
     font: 400 18px Roboto, sans-serif ;
+    border: none;
+}
+
+.textArea{
+    resize: none;
+    height: 150px;
+    width: 265px;
+    color: #e9e9e9;
+    border: 2px solid #9adfff;
+    background: #009fe6;
 }
 
 button{
     cursor: pointer;
+}
+
+.back-link{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    color: #41414d;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity .2s;
+}
+
+.back-link svg{
+    margin-right: 8px;
+}
+
+.back-link:hover{
+    opacity: 0.8;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    color: #e9e9e9;
+    border: 2px solid #9adfff;
+    background: #009fe6;
+}
+
+.input-container svg{
+    margin-left: 8px;
+}
+
+.button{
+    padding: 15px ;
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    background: #dc3747;
+    transition: filter .2s;
+}
+
+.button:hover{
+    filter: brightness(80%);
+}
+
+.button-radius{
+    border-radius: 30px;
+}
+
+.form-padrao{
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.input-form{
+    color: #e9e9e9;
+    background: #009fe6;
+    padding: 12px 15px;
+    border-radius: 0;
+    width: 100%;
+    border: 2px solid #9adfff;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    appearance: none;   
+}
+
+.form-padrao textarea{
+    width: 100%;
+    border-radius: 30px;
 }
